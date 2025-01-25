@@ -1,0 +1,157 @@
+<html>
+
+<head>
+	<title>GYM HELPER</title>
+	<link rel="stylesheet" href="GymHelper.css">	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=League+Gothic&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cinzel:wght@400..900&family=League+Gothic&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+	
+</head>
+
+<body>
+
+<div id="imagem">
+<div id="topo">
+
+	<img src="images//GymHelperLogo.png" alt="Logo" style="height:50px; width:50px; margin-top:0px; margin-left:9px;">
+	<h1 style="margin-left:70px; margin-top:-44px;">GYM HELPER</h1>
+	<button type="button" onclick="window.open('https://www.linkedin.com/in/fernandonepomuceno/', '_blank')" id="contato">CONTATO</button>
+
+</div>
+	
+<div id="meio">
+	
+	<p id="titulo">CALCULADORA DE PROTEÍNAS</p>
+	
+	<button id="planejar" onclick="scrollWin()">PLANEJAR</button>
+	
+
+</div>
+
+</div>	
+
+<div id="Uicard1">
+	
+	<img src="images//arm1.png" id="anatom1" alt="braco">
+	
+	<p id="intro">As proteínas auxiliam na aceleração da recuperação muscular, reduzindo o tempo de descanso necessário entre os treinos e permitindo treinos mais frequentes e intensos. Para quem busca ganho muscular, é recomendado consumir entre 1,4 a 2,0 gramas de proteína por quilo de peso corporal por dia, dependendo do nível de atividade física e objetivos específicos.<br><br>
+	Hipertrofia: O objetivo é aumentar o volume muscular, ou seja, o crescimento das fibras musculares. Isso é feito por meio do aumento do tamanho dos músculos, o que requer um estímulo específico.<br><br>
+	Resistência: O foco é melhorar a capacidade do corpo de sustentar atividades físicas por longos períodos, ou seja, aumentar a resistência muscular e cardiovascular. O objetivo é permitir que o músculo resista à fadiga por mais tempo, sem necessariamente aumentar seu tamanho. </p>
+
+</div>
+
+<div id="linha"></div>
+
+<div id="Uicard2">
+	
+	<p id="tipos">Hipertrofia: O treino é caracterizado por séries de 6 a 12 repetições, com cargas médias a altas (cerca de 70% a 85% do máximo que a pessoa consegue levantar, chamado de 1RM). Isso estimula o crescimento muscular, pois gera um bom equilíbrio entre força e volume de treino. O tempo de descanso entre as séries é curto a moderado, variando de 30 segundos a 90 segundos. O descanso reduzido aumenta o nível de estresse no músculo, promovendo o crescimento.<br><br>
+	Resistência: As séries são compostas por 12 a 20 repetições ou mais, utilizando cargas mais leves (geralmente 50% a 70% do 1RM). O foco está em aumentar a resistência e melhorar a capacidade do músculo de realizar várias repetições sem se fatigar rapidamente.
+	Resistência: O descanso é geralmente mais curto, cerca de 30 a 60 segundos, pois o objetivo é manter o corpo em movimento e promover a resistência ao invés de sobrecarregar os músculos com cargas pesadas. </p>
+
+	<img src="images//chest1.png" id="anatom2" alt="braco">
+
+</div>
+
+<div id="linha2"></div>
+
+<div id="Calculadora">
+
+	<p id="Pergunta1">Numero de refeições: </p>
+	<input type="number" id="Refeicoes" value="0">
+	
+	<p id="Pergunta2">Meta de proteínas/kg: </p>
+	<select name="Proteinas" id="Proteinas" style="color:#FFFFFF; font-family:Bebas Neue;">
+    <option value=1.4>1.4</option>
+    <option value=1.5>1.5</option>
+    <option value=1.6>1.6</option>
+    <option value=1.7>1.7</option>
+    <option value=1.8>1.8</option>
+    <option value=1.9>1.9</option>
+    <option value=2.0>2.0</option>
+	</select>
+	
+	<p id="Pergunta3">Peso(kg): </p>
+	<input type="number" id="Peso" value="0"> <br>
+ 
+
+	<button id="calcular" onclick="Planejar(); resu(); scrollWin2()">CALCULAR</button>
+	
+	<div id="resultado">
+	
+		<p id="demo" style="font-family:Montserrat;"></p>
+		<p style="font-family:Manrope; font-weight:bold; font-size:32px; text-align:center; margin-left:-310px; margin-top:-25px;">DE PROTEÍNAS POR REFEIÇÃO</p>
+	
+	</div>
+
+</div>
+
+<script>
+
+const targetDiv = document.getElementById("resultado");
+const btn = document.getElementById("calcular");
+
+function Planejar() {
+  
+	var x = document.getElementById("Refeicoes").value;
+	var y = document.getElementById("Proteinas").value;
+	var z = document.getElementById("Peso").value;
+	var fim = 0;
+  fim = (z * y)/x;
+  
+    if(x == 0){
+	fim = 0;
+	}
+  
+	if(z == 0){
+	fim = 0;
+	}
+	
+  document.getElementById("demo").innerHTML = (fim.toFixed(2));
+
+}
+
+function scrollWin() {
+  window.scrollTo(0, 1550);
+}
+
+function scrollWin2() {
+  window.scrollTo(0, 1950);
+}
+
+function resu() {
+      if (targetDiv.style.display == "none") {
+        targetDiv.style.display = "inline";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+</script>
+
+
+</body>
+
+</html>
